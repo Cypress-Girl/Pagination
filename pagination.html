@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<span style="padding: 10px 20px">
+    <label for="maxPage">Max page</label>
+    <input id="maxPage" type="text" value="18"  onchange="selectPage()">
+</span>
+<span style="padding: 10px 20px">
+    <label for="currentPage">Current page</label>
+    <input id="currentPage" type="text" value="7" onchange="selectPage()">
+</span>
+
+<span style="padding: 10px 20px">
+    <label for="maxVisible">Страниц к отображению</label>
+    <input id="maxVisible" type="text" value="5" onchange="selectPage()">
+</span>
+
+<br/><br/>
+
+<div id="pagination-container">
+
+</div>
+<script src="./pagination.js"></script>
+
+</body>
+</html>
