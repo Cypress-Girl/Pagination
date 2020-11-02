@@ -47,7 +47,7 @@ function selectPage(value = null) {
             initPageContainer(container, i, () => selectPage(i));
         }
 
-        if (maxPage >= 6) {
+        if (maxPage > maxVisible) {
             initPageContainer(container, "...", null);
 
             initPageContainer(container, maxPage, () => selectPage(maxPage));
